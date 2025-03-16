@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Genre Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<div id="surveyContainer">
+<body>
+    <h1>Find Your Top Book Genres!</h1>
+    <h4>Rate each question on a scale from 1 to 5!
+        <br> 
+        <br>1 = I don't like it at all     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm72.4-118.5c9.7-9 10.2-24.2 1.2-33.9C315.3 344.3 290.6 328 256 328s-59.3 16.3-73.5 31.6c-9 9.7-8.5 24.9 1.2 33.9s24.9 8.5 33.9-1.2c7.4-7.9 20-16.4 38.5-16.4s31.1 8.5 38.5 16.4c9 9.7 24.2 10.2 33.9 1.2zM176.4 272c17.7 0 32-14.3 32-32c0-1.5-.1-3-.3-4.4l10.9 3.6c8.4 2.8 17.4-1.7 20.2-10.1s-1.7-17.4-10.1-20.2l-96-32c-8.4-2.8-17.4 1.7-20.2 10.1s1.7 17.4 10.1 20.2l30.7 10.2c-5.8 5.8-9.3 13.8-9.3 22.6c0 17.7 14.3 32 32 32zm192-32c0-8.9-3.6-17-9.5-22.8l30.2-10.1c8.4-2.8 12.9-11.9 10.1-20.2s-11.9-12.9-20.2-10.1l-96 32c-8.4 2.8-12.9 11.9-10.1 20.2s11.9 12.9 20.2 10.1l11.7-3.9c-.2 1.5-.3 3.1-.3 4.7c0 17.7 14.3 32 32 32s32-14.3 32-32z"/></svg></a>
+        <br>2 = Eh not really     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM174.6 384.1c-4.5 12.5-18.2 18.9-30.7 14.4s-18.9-18.2-14.4-30.7C146.9 319.4 198.9 288 256 288s109.1 31.4 126.6 79.9c4.5 12.5-2 26.2-14.4 30.7s-26.2-2-30.7-14.4C328.2 358.5 297.2 336 256 336s-72.2 22.5-81.4 48.1zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></a>
+        <br>3 = Neutral     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM176.4 240a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm192-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM184 328c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0z"/></svg></a>
+        <br>4 = I like it     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></a>
+        <br>5 = I love it!     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm349.5 52.4c18.7-4.4 35.9 12 25.5 28.1C350.4 374.6 306.3 400 255.9 400s-94.5-25.4-119.1-63.5c-10.4-16.1 6.8-32.5 25.5-28.1c28.9 6.8 60.5 10.5 93.6 10.5s64.7-3.7 93.6-10.5zM215.3 137.1c17.8 4.8 28.4 23.1 23.6 40.8l-17.4 65c-2.3 8.5-11.1 13.6-19.6 11.3l-65.1-17.4c-17.8-4.8-28.4-23.1-23.6-40.8s23.1-28.4 40.8-23.6l16.1 4.3 4.3-16.1c4.8-17.8 23.1-28.4 40.8-23.6zm122.3 23.6l4.3 16.1 16.1-4.3c17.8-4.8 36.1 5.8 40.8 23.6s-5.8 36.1-23.6 40.8l-65.1 17.4c-8.5 2.3-17.3-2.8-19.6-11.3l-17.4-65c-4.8-17.8 5.8-36.1 23.6-40.8s36.1 5.8 40.9 23.6z"/></svg></a>
+    </h4>
+    <form id="surveyForm">
+        <div class="question">
+            <p><strong>Do you enjoy reading about secret codes, hidden treasures, or unsolved cases?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q1" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q1" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q1" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q1" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q1" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>What rating would you give the Harry Potter movies/books?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q2" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q2" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q2" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q2" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q2" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you like books with funny characters that make you laugh?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q3" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q3" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q3" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q3" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q3" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you enjoy fast-paced action-packed stories with a thrilling adventure?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q4" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q4" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q4" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q4" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q4" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you like books set in the past based on real historical events?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q5" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q5" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q5" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q5" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q5" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you like stories that take place in a future full of technology and robots?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q6" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q6" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q6" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q6" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q6" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you enjoy stories with life lessons and situations that could happen in real life?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q7" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q7" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q7" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q7" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q7" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you enjoy reading stories about real people and fascinating events in their lives?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q8" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q8" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q8" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q8" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q8" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Are you someone who likes visiting haunted houses or hearing about mysterious events?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q9" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q9" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q9" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q9" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q9" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you like stories about sports and athletes?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q10" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q10" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q10" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q10" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q10" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Are you fascinated by police cases or enjoy “True Crime“ shows?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q11" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q11" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q11" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q11" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q11" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you enjoy books that have characters with magical powers and face supernatural challenges?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q12" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q12" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q12" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q12" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q12" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>   
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>What rating would you give "The Diary of a Wimpy Kid" movie/books?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q13" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q13" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q13" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q13" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q13" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you like shows like “Jumanji“ or “Indiana Jones,“ where characters face thrilling challenges and go on exciting adventures?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q14" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q14" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q14" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q14" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q14" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you enjoy visiting history museums or learning about how people lived in the past?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q15" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q15" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q15" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q15" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q15" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>How much do you enjoy fiction stories that take place in outer space or have aliens?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q16" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q16" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q16" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q16" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q16" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you enjoy books where the characters learn important life lessons through their experiences?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q17" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q17" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q17" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q17" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q17" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you like to read books with interesting facts about animals or nature?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q18" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q18" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q18" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q18" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q18" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you enjoy stories about spooky houses, creepy creatures, or eerie adventures?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q19" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q19" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q19" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q19" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q19" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you like books about teamwork, friendship, and the excitement of competition?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q20" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q20" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q20" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q20" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q20" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>What rating would you give shows like “Scooby-Doo,“ where characters solve mysteries and save their town?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q21" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q21" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q21" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q21" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q21" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Are you interested in Greek or Roman mythology, such as the Percy Jackson books/series?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q22" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q22" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q22" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q22" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q22" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>What rating would you give the Dog Man movie/books?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q23" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q23" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q23" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q23" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q23" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you like to play pretend at recess, imagine exciting challenges, and go on adventures with your friends?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q24" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q24" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q24" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q24" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q24" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Is history one of your favorite subjects?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q25" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q25" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q25" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q25" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q25" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>What rating would you give the “Star Wars“ movies or TV Shows?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q26" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q26" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q26" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q26" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q26" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Submit</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Are you interested in shows where kids just like you try to solve everyday problems or navigate new experiences?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q27" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q27" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q27" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q27" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q27" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Submit</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>What rating would you give “National Geographic“ or “Planet Earth“</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q28" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q28" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q28" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q28" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q28" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Submit</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>What rating would you give Halloween movies such as “Hocus Pocus“ or “The Nightmare before Christmas“?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q29" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q29" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q29" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q29" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q29" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="button" class="next-btn">Submit</button>
+        </div>
+        <div class="question" style="display: none;">
+            <p><strong>Do you enjoy watching sports teams compete on TV or in real life?</strong></p>
+            <div class="rating">
+                <label><input type="radio" name="q30" value="1" required><span class="star">★</span></label>
+                <label><input type="radio" name="q30" value="2"><span class="star">★</span></label>
+                <label><input type="radio" name="q30" value="3"><span class="star">★</span></label>
+                <label><input type="radio" name="q30" value="4"><span class="star">★</span></label>
+                <label><input type="radio" name="q30" value="5"><span class="star">★</span></label>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+    <!-- Progress Bar -->
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+        <div class="progress-text" id="progressText">0%</div>
+    </div>
+</div>
+    
+    <div id="results" style="display: none; text-align: center; margin-top: 20px; font-size: 1.2em;">
+        <h1>Your Top Genres:</h1>
+        <ul id="genreList"></ul>
+    </div>
+</body>
+</html>

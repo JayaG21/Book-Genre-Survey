@@ -1,0 +1,196 @@
+
+/* General styling for the body */
+body {
+    font-family:'Times New Roman', Times, serif 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #ccf2e3;
+    color: #100641;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+    padding: 0;
+    color:#302100;
+}
+
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #302100;
+}
+
+h2 {
+    text-align: center;
+    color: #302100
+}
+
+h4 {
+    text-align: center;
+    color: #302100
+}
+
+.surveyContainer {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Centers the form */
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(194, 191, 233, 0.1);
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    width: 100%;
+    max-width: 600px; /* Match form width */
+    margin: 10px auto; /* Centers it with spacing */
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: relative; /* Add relative positioning */
+    display: flex; /* Use flexbox */
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0;
+    background-color: #43766C;
+    border-radius: 25px;
+    transition: width 0.3s;
+}
+
+.progress-text {
+    position: absolute; /* Position the text absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for true center */
+    z-index: 1; /* Ensure the text is above the progress bar */
+    color: #302100; /* Text color */
+    font-weight: bold; /* Bold text */
+}
+
+/* Next Button */
+.next-btn {
+    background-color: #43766C;
+    color: #ffffff;
+    font: inherit;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.next-btn:hover {
+    background-color: #365E58;
+    scale: 1.05;
+    transition: background-color 0.3s, scale 0.3s;
+}
+
+.submit-btn {
+    background-color: #43766C;
+    color: #ffffff;
+    font: inherit;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Submit Button */
+.submit-btn:hover {
+    background-color: #365E58;
+    scale: 1.05;
+    transition: background-color 0.3s, scale 0.3s;
+}
+
+/* Question styling */
+.question {
+    margin-bottom: 20px;
+}
+
+/* Styling the stars */
+.rating {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+/* Styling each star */
+.star {
+    color: #dddddd;
+    display: inline-block;
+    font-size: 4em;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, color 0.3s;; /* Smooth scaling effect */
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+/* Change color on hover */
+.star.hover,
+.star.hover ~ .star {
+    color: #FFC107;
+    transition: color 0.3s,
+    
+}
+
+.star:hover{
+    transform: scale(1.2)
+}
+
+/* Change color when selected */
+.star.selected,
+.star.selected ~ .star {
+    color: #FFC107;
+}
+
+.bindex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+    margin: 0;
+}
+
+.link {
+    background-color: #43766C;
+    margin: 10px auto; /* Centers it with spacing */
+    color: #ffffff;
+    font: inherit;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.link:hover {
+    background-color: #365E58;
+    scale: 1.05;
+    transition: background-color 0.3s, scale 0.3s;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+    cursor: default;
+}
