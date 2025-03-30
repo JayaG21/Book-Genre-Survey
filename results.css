@@ -1,0 +1,9 @@
+#genreList a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Makes the text the same color as normal text */
+    cursor: pointer; /* Keeps the clickable effect */
+}
+
+#genreList a:hover {
+    text-decoration: underline; /* Optional: Adds underline only when hovered */
+}
