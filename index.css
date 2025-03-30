@@ -1,0 +1,28 @@
+.bindex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+    margin: 0;
+}
+
+.link {
+    background-color: #43766C;
+    margin: 10px auto; /* Centers it with spacing */
+    color: #ffffff;
+    font: inherit;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.link:hover {
+    background-color: #365E58;
+    scale: 1.05;
+    transition: background-color 0.3s, scale 0.3s;
+}
