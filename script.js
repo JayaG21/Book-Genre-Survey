@@ -151,6 +151,6 @@ document.querySelectorAll('.next-btn').forEach((btn, index) => {
         localStorage.setItem('surveyResults', JSON.stringify(sortedGenres));
 
         // Navigate to Results.html
-        location.href = 'Results.html';
+        location.href = 'results.html';
         });
     });
