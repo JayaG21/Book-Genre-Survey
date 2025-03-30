@@ -137,28 +137,20 @@ document.querySelectorAll('.next-btn').forEach((btn, index) => {
             }
         });
 
+        //Calculate total score
+        let totalScore = Object.values(scores).reduce((acc, score) => acc + score, 0);
+
+        //Convert scores to percentages
+        let percentageScores = Object.entries(scores).map(([genre, score]) => {
+            let percentage = Math.round((score / 15) *100); //Calculate percentage and round to 2 decimal places
+            return { genre, percentage };
+        })
 
         // Sort and display the top genres
-        let sortedGenres = Object.entries(scores).sort((a, b) => b[1] - a[1]);
-        let topGenres = sortedGenres.slice(0,10); // Get top 10 genres
+        let sortedGenres = percentageScores.sort((a, b) => b.percentage - a.percentage);
+        localStorage.setItem('surveyResults', JSON.stringify(sortedGenres));
 
-        let genreList = document.getElementById('genreList');
-        genreList.innerHTML = ''; // Clear any previous results
-        topGenres.forEach(([genre, score]) => {
-            let li = document.createElement('li');
-            li.textContent = `${genre}: ${score} points`;
-            genreList.appendChild(li);
+        // Navigate to Results.html
+        location.href = 'Results.html';
         });
-
-        // Hide the survey and show the results
-        let surveyContainer = document.getElementById('surveyContainer');
-        let results = document.getElementById('results');
-
-        if (surveyContainer && results) {
-            surveyContainer.style.display = 'none';
-            results.style.display = 'block';
-        } else {
-            console.error("Element not found! Check your HTML ID names.");
-        }
     });
-});
