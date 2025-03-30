@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Genre Survey</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/survey.css">
+    <link rel="stylesheet" href="css/svg.css">
+    <script src="js/script.js"></script>
 </head>
 <div id="surveyContainer">
 <body>
@@ -339,7 +341,7 @@
             <button type="button" class="next-btn">Next</button>
         </div>
         <div class="question" style="display: none;">
-            <p><strong>How much do you enjoy watching sports teams compete on TV or in real life?</strong></p>
+            <p><strong>Do you enjoy watching sports teams compete on TV or in real life?</strong></p>
             <div class="rating">
                 <label><input type="radio" name="q30" value="1" required><span class="star">★</span></label>
                 <label><input type="radio" name="q30" value="2"><span class="star">★</span></label>
@@ -347,7 +349,7 @@
                 <label><input type="radio" name="q30" value="4"><span class="star">★</span></label>
                 <label><input type="radio" name="q30" value="5"><span class="star">★</span></label>
             </div>
-            <button type="submit" class="submit-btn">Submit!</button>
+            <button type="submit" class="submit-btn">Submit</button>
         </div>
     </form>
     <!-- Progress Bar -->
@@ -356,10 +358,5 @@
         <div class="progress-text" id="progressText">0%</div>
     </div>
 </div>
-    
-    <div id="results" style="display: none; text-align: center; margin-top: 20px; font-size: 1.2em;">
-        <h1>Your Top Genres:</h1>
-        <ul id="genreList"></ul>
-    </div>
 </body>
 </html>
