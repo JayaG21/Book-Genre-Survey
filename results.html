@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Genre Survey</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/results.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const genreList = document.getElementById('genreList');
+            const storedResults = localStorage.getItem('surveyResults');
+            const genreLinks = {
+                "Mystery": "https://search.follettsoftware.com/metasearch/ui/2348/search/all?q=5&visualSearch=true&ists=0&from=Topics&activeMenu=HOME",
+                "Fantasy": "https://search.follettsoftware.com/metasearch/ui/2348/search/all?q=2&visualSearch=true&from=Topics&activeMenu=HOME",
+                "Humor": "https://search.follettsoftware.com/metasearch/ui/2348/search/all?q=3&visualSearch=true&ists=0&from=Topics&activeMenu=HOME",
+                "Adventure": "https://search.follettsoftware.com/metasearch/ui/2348/search/all?q=6&visualSearch=true&ists=0&from=Topics&activeMenu=HOME",
+                "Historical Fiction": "https://search.follettsoftware.com/metasearch/ui/2348/search/all?q=9&visualSearch=true&ists=0&from=Topics&activeMenu=HOME",
+                "Scary": "https://search.follettsoftware.com/metasearch/ui/2348/search/all?q=4&visualSearch=true&ists=0&from=Topics&activeMenu=HOME",
+                "Sports": "https://search.follettsoftware.com/metasearch/ui/2348/search/all?q=7&visualSearch=true&ists=0&from=Topics&activeMenu=HOME",
+            }
+    
+            if (storedResults) {
+                const results = JSON.parse(storedResults);
+                genreList.innerHTML = ''; // Clear any previous results
+
+                results.forEach(({ genre, percentage }) => {
+                    const li = document.createElement('li');
+                    if (genreLinks[genre]) {
+                    const a = document.createElement('a');
+                    a.textContent = `${genre}: ${percentage}%`;
+                    a.href = genreLinks[genre] || '#'; // Use '#' if no link is found
+                    a.target = '_blank'; // Open in new tab
+                    li.appendChild(a);
+                    } else {
+                        //if no link just display plain text
+                        li.textContent = `${genre}: ${percentage}%`;
+                        li.style.cursor = 'pointer';
+                        li.addEventListener('click', () => {
+                            alert('Ask your librarian about books in this genre!');
+                    });
+                    
+                    }
+                    genreList.appendChild(li);
+                });
+            } else {
+                genreList.innerHTML = '<li>No results found. Please complete the survey.</li>';
+            }
+        });
+    </script>
+
+    <div id="results" style="text-align: center; margin-top: 20px; font-size: 1.2em;">
+        <h1>Your Top Genres:</h1>
+        <ul id="genreList"></ul>
+    </div>
+</body>
+<html> 
