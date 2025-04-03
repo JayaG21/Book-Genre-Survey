@@ -1,22 +1,22 @@
-.surveyContainer {
+/*.surveyContainer {
     width: 100%;
     max-width: 600px; /* Adjust as needed */
     margin: 0 auto; /* Centers the form */
     text-align: center;
-}
+}*/
 
 /* Form styling */
-form {
+/*form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(194, 191, 233, 0.1);
-}
+}*/
 
 /* Progress Bar */
-.progress-bar-container {
+/*.progress-bar-container {
     width: 100%;
     max-width: 600px; /* Match form width */
     margin: 10px auto; /* Centers it with spacing */
@@ -24,17 +24,17 @@ form {
     border-radius: 25px;
     position: relative; /* Add relative positioning */
     display: flex; /* Use flexbox */
-}
+}*/
 
-.progress-bar {
+/*.progress-bar {
     height: 20px;
     width: 0;
     background-color: #43766C;
     border-radius: 25px;
     transition: width 0.3s;
-}
+}*/
 
-.progress-text {
+/*.progress-text {
     position: absolute; /* Position the text absolutely */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
@@ -42,10 +42,10 @@ form {
     z-index: 1; /* Ensure the text is above the progress bar */
     color: #302100; /* Text color */
     font-weight: bold; /* Bold text */
-}
+}*/
 
 /* Next Button */
-.next-btn {
+/*.next-btn {
     background-color: #43766C;
     color: #ffffff;
     font: inherit;
@@ -56,15 +56,14 @@ form {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
-}
-
-.next-btn:hover {
+}*/
+/*.next-btn:hover {
     background-color: #365E58;
     scale: 1.05;
     transition: background-color 0.3s, scale 0.3s;
-}
+}*/
 
-.submit-btn {
+/*.submit-btn {
     background-color: #43766C;
     color: #ffffff;
     font: inherit;
@@ -75,54 +74,53 @@ form {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
-}
+}*/
 
 /* Submit Button */
-.submit-btn:hover {
+/*.submit-btn:hover {
     background-color: #365E58;
     scale: 1.05;
     transition: background-color 0.3s, scale 0.3s;
-}
+}*/
 
 /* Question styling */
-.question {
+/*.question {
     margin-bottom: 20px;
-}
+}*/
 
 /* Styling the stars */
-.rating {
+/*.rating {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
-}
+}*/
 
 /* Styling each star */
-.star {
+/*.star {
     color: #dddddd;
     display: inline-block;
     font-size: 4em;
     cursor: pointer;
     transition: transform 0.2s ease-in-out, color 0.3s;; /* Smooth scaling effect */
-}
+}*/
 
-.rating input[type="radio"] {
+/*.rating input[type="radio"] {
     display: none;
-}
+}*/
 
 /* Change color on hover */
-.star.hover,
+/*.star.hover,
 .star.hover ~ .star {
     color: #FFC107;
-    transition: color 0.3s,
-    
-}
+    transition: color 0.3s,  
+}*/
 
-.star:hover{
+/*.star:hover{
     transform: scale(1.2)
 }
 
 /* Change color when selected */
-.star.selected,
+/*.star.selected,
 .star.selected ~ .star {
     color: #FFC107;
-}
+}*/
